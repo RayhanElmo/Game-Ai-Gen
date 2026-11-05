@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="69" height="69" viewBox="0 0 69 69">
+  <defs>
+    <linearGradient id="r" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4a4a52"/>
+      <stop offset="1" stop-color="#1f1f26"/>
+    </linearGradient>
+    <filter id="n">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" seed="21"/>
+      <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.35 0"/>
+    </filter>
+  </defs>
+  <rect width="69" height="69" fill="#0f0f14"/>
+  <!-- rock body -->
+  <polygon points="8,58 14,22 26,10 46,8 60,20 62,42 56,60 34,64 12,60" fill="url(#r)"/>
+  <polygon points="8,58 14,22 26,10 46,8 60,20 62,42 56,60 34,64 12,60" fill="#000" filter="url(#n)"/>
+  <!-- cracks -->
+  <g stroke="#0a0a0e" stroke-width="1" fill="none" opacity="0.7">
+    <path d="M26,10 L30,30 L24,50"/>
+    <path d="M46,8 L44,28 L50,48"/>
+    <path d="M14,22 L34,26 L56,24"/>
+  </g>
+  <!-- highlights -->
+  <g stroke="#8a8a96" stroke-width="1" opacity="0.4">
+    <path d="M20,16 L32,14"/>
+    <path d="M40,12 L52,18"/>
+  </g>
+  <!-- moss -->
+  <g fill="#3a5a3a" opacity="0.5">
+    <circle cx="22" cy="46" r="3"/>
+    <circle cx="48" cy="52" r="2.5"/>
+    <circle cx="36" cy="20" r="2"/>
+  </g>
+</svg>

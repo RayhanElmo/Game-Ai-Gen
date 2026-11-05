@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="69" height="69" viewBox="0 0 69 69">
+  <defs>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.6">
+      <stop offset="0" stop-color="#ff5a6b" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#7a1a24" stop-opacity="0.4"/>
+    </radialGradient>
+    <linearGradient id="frame" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5a1a22"/>
+      <stop offset="1" stop-color="#2a0a10"/>
+    </linearGradient>
+  </defs>
+  <rect width="69" height="69" fill="#1a0a10"/>
+  <!-- gate frame -->
+  <rect x="6" y="6" width="57" height="57" rx="6" fill="url(#frame)" stroke="#ff5a6b" stroke-width="2"/>
+  <!-- inner glow -->
+  <rect x="12" y="12" width="45" height="45" rx="4" fill="url(#glow)"/>
+  <!-- runes -->
+  <g stroke="#ff8a9a" stroke-width="1.5" fill="none" opacity="0.7">
+    <circle cx="34.5" cy="34.5" r="14"/>
+    <circle cx="34.5" cy="34.5" r="8"/>
+    <line x1="34.5" y1="20.5" x2="34.5" y2="16"/>
+    <line x1="34.5" y1="48.5" x2="34.5" y2="53"/>
+    <line x1="20.5" y1="34.5" x2="16" y2="34.5"/>
+    <line x1="48.5" y1="34.5" x2="53" y2="34.5"/>
+  </g>
+  <!-- center core -->
+  <circle cx="34.5" cy="34.5" r="4" fill="#ffffff" opacity="0.8"/>
+  <!-- corner spikes -->
+  <g fill="#ff5a6b">
+    <polygon points="6,6 14,6 6,14"/>
+    <polygon points="63,6 55,6 63,14"/>
+    <polygon points="6,63 14,63 6,55"/>
+    <polygon points="63,63 55,63 63,55"/>
+  </g>
+</svg>
